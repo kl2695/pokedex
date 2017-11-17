@@ -4,7 +4,8 @@ import PokemonIndex from './pokemon_index';
 import {selectAllPokemon} from '../../reducers/selectors';
 
 const mapStateToProps = state => ({
-  pokemon: selectAllPokemon(state)
+  pokemon: selectAllPokemon(state),
+  ui: state.ui
 });
 
 const mapDispatchToProps = dispatch => ({
